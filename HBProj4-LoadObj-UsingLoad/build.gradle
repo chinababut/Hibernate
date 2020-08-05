@@ -1,0 +1,22 @@
+
+
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'application'
+}
+
+repositories {
+    
+    jcenter()
+}
+
+dependencies {
+
+  // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
+  implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.0.0.Alpha5'
+  // https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6
+  implementation group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
+  
+}
+mainClassName = 'com.nt.test.LoadObjUsingLoad'
+                 			 
